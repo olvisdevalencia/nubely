@@ -1,0 +1,1 @@
+export const availableNationalities = [{ name: "Argentina", code: "ar" }, { name: "Peru", code: "pe" }, { name: "Venezuela", code: "ve" }];

@@ -1,0 +1,23 @@
+import React from "react";
+import Link from "next/link";
+import Layout from "../components/Layout";
+import { availableNationalities } from "../constants/nationalities";
+
+const Users: React.FC = () => {
+  return (
+    <Layout>
+      <h1>Nationalities</h1>
+      <ul>
+        {availableNationalities.map((nationality) => (
+          <li key={nationality}>
+            <Link href={`/users/${nationality}`}>
+              <a>{nationality}</a>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </Layout>
+  );
+};
+
+export default Users;
